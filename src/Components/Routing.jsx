@@ -14,6 +14,9 @@ const Routing = () => {
         <li>
           <Link to="/about">About</Link>
         </li>
+        <li>
+          <Link to="/user">User</Link>
+        </li>
       </ul>
     </div>
   );
