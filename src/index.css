@@ -17,6 +17,12 @@ code {
   justify-content: space-between;
   margin: 20px 0px;
 }
+.navbar {
+  display: flex;
+}
+.navbar .active {
+  color: green;
+}
 .nav-links {
   display: flex;
   gap: 15px;
@@ -24,4 +30,9 @@ code {
 }
 .nav-links li a {
   text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+.nav-links li a:hover {
+  color: green;
 }

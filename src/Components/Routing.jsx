@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Routing = () => {
   return (
@@ -7,17 +7,25 @@ const Routing = () => {
       <div className="logo">
         <h2>React Routing</h2>
       </div>
-      <ul className="nav-links">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/user">User</Link>
-        </li>
-      </ul>
+      <navbar className="navbar">
+        <ul className="nav-links">
+          <li>
+            <NavLink className="nav-bar-link" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-bar-link" to="/about">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-bar-link" to="/user">
+              User
+            </NavLink>
+          </li>
+        </ul>
+      </navbar>
     </div>
   );
 };
