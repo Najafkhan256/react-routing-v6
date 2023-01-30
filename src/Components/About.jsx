@@ -15,6 +15,12 @@ const About = () => {
         <li>
           <Link to="/user/haider">Haider</Link>
         </li>
+        <li>
+          <Link to="/post/123/hello-world">/post/123/hello-world</Link>
+        </li>
+        <li>
+          <Link to="/post/456/goodbye-moon">/post/456/goodbye-moon</Link>
+        </li>
       </ul>
     </div>
   );

@@ -37,9 +37,31 @@ const Routing = () => {
                 return { color: isActive ? "green" : "black" };
               }}
               className="nav-bar-link"
-              to="/user"
+              to="/contact"
             >
-              User
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => {
+                return { color: isActive ? "green" : "black" };
+              }}
+              className="nav-bar-link"
+              to="/filter"
+            >
+              Filter
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => {
+                return { color: isActive ? "green" : "black" };
+              }}
+              className="nav-bar-link"
+              to="/post"
+            >
+              Post
             </NavLink>
           </li>
         </ul>
