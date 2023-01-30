@@ -9,7 +9,7 @@ const Post = () => {
     <div>
       <h3>Post page</h3>
       <h2>ID: {params.id}</h2>
-      <h2>post Name: {params.slug}</h2>
+      <h2>Slug: {params.slug}</h2>
     </div>
   );
 };
