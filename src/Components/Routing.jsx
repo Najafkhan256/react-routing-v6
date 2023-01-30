@@ -10,17 +10,35 @@ const Routing = () => {
       <navbar className="navbar">
         <ul className="nav-links">
           <li>
-            <NavLink className="nav-bar-link" to="/">
+            <NavLink
+              style={({ isActive }) => {
+                return { color: isActive ? "green" : "black" };
+              }}
+              className="nav-bar-link"
+              to="/"
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className="nav-bar-link" to="/about">
+            <NavLink
+              style={({ isActive }) => {
+                return { color: isActive ? "green" : "black" };
+              }}
+              className="nav-bar-link"
+              to="/about"
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink className="nav-bar-link" to="/user">
+            <NavLink
+              style={({ isActive }) => {
+                return { color: isActive ? "green" : "black" };
+              }}
+              className="nav-bar-link"
+              to="/user"
+            >
               User
             </NavLink>
           </li>
